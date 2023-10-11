@@ -1,6 +1,16 @@
-def linear_search_product(products, target_product):
-    indices = []
-    for i in range(len(products)):
-        if products[i] == target_product:
-            indices.append(i)
-    return indices
+def linearSearchProduct(productList, targetProduct):
+  indices = []
+
+  for index, product in enumerate(productList):
+    if product == targetProduct:
+      indices.append(index)
+
+  return indices
+
+
+
+products = ["shoes", "boot", "loafer", "shoes", "sandal", "shoes"]
+target = "shoes"
+target2 = 'apple'
+result = linearSearchProduct(products, target)
+print(result)
